@@ -1,5 +1,4 @@
-//Typed js Code
-    var typed = new Typed(".auto-input", {
+   var typed = new Typed(".auto-input", {
     strings: [" , I am"],
     typeSpeed:105,
     showCursor:false,
