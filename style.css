@@ -189,3 +189,101 @@ button:focus{
     text-decoration: underline 1px solid white;
     text-underline-offset: 3px;
 }
+
+.card {
+    background-color: #343a40; /* Background color */
+    border-radius: 20px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow content */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    transition: transform 0.3s ease; /* Smooth transition on hover */
+  }
+
+.card:hover {
+    transform: translateY(-15px); /* Move the card up slightly on hover */
+  }
+
+.card-img-top {
+    border-top-left-radius: 20px; /* Rounded top-left corner for the image */
+    border-top-right-radius: 20px; /* Rounded top-right corner for the image */
+  }
+
+.card-body {
+    padding: 1.5rem; /* Padding inside the card body */
+  }
+
+.card-title {
+    font-size: 1.25rem; /* Title font size */
+    margin-bottom: 0.5rem; /* Bottom margin for the title */
+  }
+
+.card-text {
+    font-size: 1rem; /* Text font size */
+    color: #dee2e6; /* Text color */
+  }
+
+  .rounded-square {
+    width: 200px; /* Adjust the width as needed */
+    height: 200px; /* Set the height equal to the width for a square */
+    border-radius: 10px; /* Adjust border-radius to half of the width for a rounded square */
+    overflow: hidden; /* Ensure image doesn't overflow */
+  }
+  
+  .resume-card {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .resume-card img {
+    transition: transform 0.3s ease;
+  }
+  
+  .resume-card:hover img {
+    transform: scale(1.57); /* Increase the scale value for a stronger zoom effect */
+  }
+  
+  .view-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease;
+  }
+  
+  .resume-card:hover .view-cover {
+    opacity: 1; /* Show view cover on hover */
+  }
+  .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 9999;
+  }
+  
+  .popup-content {
+    color: white;
+  }
+  
+  .close {
+    color: white;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover {
+    color: red;
+  }
+  .resume-card {
+    border: 2px solid #ffffff;
+    padding: 1px;
+    border-radius: 20px;
+    background-color: white;
